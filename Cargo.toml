@@ -1,0 +1,24 @@
+[package]
+name = "jolt-zkvm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num-traits = "0.2"
+bitvec = "1.0"
+rand = "0.8"
+sha3 = "0.10"
+ff = "0.13"
+group = "0.13"
+subtle = "2.5"
+digest = "0.10"
+generic-array = "0.14"
+
+[dev-dependencies]
+criterion = "0.4"
+proptest = "1.0"
+rand_chacha = "0.3"
+
+[[bench]]
+name = "instruction_benchmarks"
+harness = false
